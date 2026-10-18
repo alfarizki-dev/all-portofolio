@@ -2120,6 +2120,12 @@ body.nav-open .mobile-menu__link:nth-child(5) { transition-delay: 0.32s; }
   transition: transform 0.75s var(--ease), filter 0.5s ease;
 }
 
+.project-card:nth-child(1) .project-card__thumb img,
+.project-card__thumb img.is-screenshot {
+  object-fit: contain;
+  object-position: center;
+}
+
 .project-card:hover .project-card__thumb img {
   transform: scale(1.05);
   filter: var(--thumb-filter-hover);
